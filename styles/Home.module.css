@@ -1,14 +1,22 @@
 .container {
+  color: #eaeaea;
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  background: #5C258D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+.container a{
+  color:#fff;
+  text-decoration: none;
+}
 .title a {
-  color: #0070f3;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -89,4 +97,85 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.homepage{
+  width: 86vw;
+  height: 86vh;
+  background-color: rgba(7, 7, 7, 0.3);
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+.main_navigation{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+}
+
+.logo_container{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 999px;
+
+}
+.nav_links{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  align-items: center;
+}
+
+.profile_container{
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid white;
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_container img{
+  object-fit:cover;
+
+}
+
+.text_section{
+  width: 30%;
+  background-color: #5C258D;
+}
+.hero{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.diamond{
+  margin: 3rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 2rem;
+  transform: rotate(45deg);
+  background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.screen{
+  margin-left: auto;
+  width: 20vw;
+  height: 50vh;
+  background-color: rgba(180, 180, 180, 0.1);
+  border-radius: 1rem;
 }
